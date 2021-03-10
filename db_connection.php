@@ -13,7 +13,7 @@ function OpenConAgendamento()
  function OpenConLocal()
  {
  $dbhost = "localhost";
- $dbuser = "rafael";
+ $dbuser = "root";
  $dbpass = "";
  $db = "relatorio";
  $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
