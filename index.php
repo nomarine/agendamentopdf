@@ -1,4 +1,5 @@
 <?php
+header("Content-type: text/html; charset=utf-8");
 require('mysql_table.php');
 require('db_connection.php');
 // Connect to database
@@ -45,4 +46,5 @@ $prop = array('HeaderColor'=>array(0,0,0),
 			'padding'=>2);
 $pdf->Table($link,$sql,$prop);
 $pdf->Output();
+$pdf->Output('F', 'C:\Users\rafael\Desktop\teste.pdf');
 ?>
